@@ -6,9 +6,7 @@ class Day04
   def initialize
     @passports = open('input').read
                               .split("\n\n")
-                              .map { |p| p.split(/[\s+]/) }
-                              .map { |p| p.map { _1.split(':') } }
-                              .map(&:to_h)
+                              .map { |passport| Hash[*passport.split(/[\s+:]/)] }
   end
 
   def part1
