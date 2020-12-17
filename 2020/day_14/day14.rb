@@ -29,7 +29,7 @@ class Day14
 
   private
 
-  def run(&block)
+  def run
     @code.each do |line|
       next @mask = line.split(' = ').last if line.start_with?('mask')
 
