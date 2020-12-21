@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Day19
-  def initialize(input = nil)
+  def initialize
     rules, messages = File.open('input').read.tr('"', '').split("\n\n")
 
     @messages = messages.split("\n")

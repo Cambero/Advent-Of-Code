@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Day20
-  def initialize(input = nil)
+  def initialize
     @tiles = File.open('input')
                  .read
                  .split("\n\n")
